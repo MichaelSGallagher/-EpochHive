@@ -11,8 +11,8 @@
 
 	http://creativecommons.org/licenses/by-nc-sa/4.0/
 */
-#include "\q\addons\custom_server\Configs\blck_defines.hpp";
-
-_this remoteExec ["blck_fnc_HandleAIVehicleDamage",2];
+//#include "\q\addons\custom_server\Configs\blck_defines.hpp";
+if !(isDedicated) exitWith {};
+_this call blck_fnc_HandleAIVehicleHit;
 
 

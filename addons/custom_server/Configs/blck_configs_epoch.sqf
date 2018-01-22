@@ -1,8 +1,6 @@
 /*
-	for ghostridergaming
 	By Ghostrider [GRG]
 	Copyright 2016
-	Last Modified 3-14-17
 	
 	--------------------------
 	License
@@ -755,7 +753,7 @@ for examples of how you can do this see \Major\Compositions.sqf
 				["arifle_Mk20_GL_plain_F","30Rnd_556x45_Stanag"],
 				["arifle_MX_F","30Rnd_65x39_caseless_mag"],
 				["arifle_MX_GL_F","30Rnd_65x39_caseless_mag"],
-				//["arifle_MX_SW_Black_Hamr_pointer_F","100Rnd_65x39_caseless_mag_Tracer"],
+				["arifle_MX_SW_Black_Hamr_pointer_F","100Rnd_65x39_caseless_mag_Tracer"],
 				["arifle_MXC_F","30Rnd_65x39_caseless_mag"],
 				["arifle_MXM_F","30Rnd_65x39_caseless_mag"],
 				["arifle_SDAR_F","20Rnd_556x45_UW_mag"],

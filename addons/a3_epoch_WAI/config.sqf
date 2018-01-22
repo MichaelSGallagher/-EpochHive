@@ -28,7 +28,7 @@ if(isServer) then {
 		ai_share_distance			= 300;			// distance from killed AI for AI to share your rough position
 
 		ai_crypto_gain				= true;			// gain crypto for killing AI
-		ai_crypto_gain_drop			= 50;			// chance of drop in %
+		ai_crypto_gain_drop			= 100;			// chance of drop in %
 		ai_add_krypto				= 100;			// amount of crypto gained for killing a bandit AI
 		ai_special_krypto			= 1000;			// amount of crypto gained for killing a special AI
 		ai_crypto_bomb				= 5000;			// amount of krypto gaind for defusing the nuke/bomb
@@ -92,10 +92,10 @@ if(isServer) then {
 
 		wai_mission_markers			= ["DZMSMajMarker","DZMSMinMarker","DZMSBMajMarker","DZMSBMinMarker"];
 		wai_avoid_missions			= 300;				// avoid spawning missions this close to other missions, these are defined in wai_mission_markers
-		//wai_avoid_traders				= 0;			// avoid spawning missions this close to traders
-		//wai_avoid_town				= 0;			// avoid spawning missions this close to towns, *** doesn't function with infiSTAR enabled ***
-		//wai_avoid_road				= 0;			// avoid spawning missions this close to roads
-		//wai_avoid_water				= 0;			// avoid spawning missions this close to water
+		wai_avoid_traders			= 250;			// avoid spawning missions this close to traders
+		wai_avoid_town				= 100;			// avoid spawning missions this close to towns, *** doesn't function with infiSTAR enabled ***
+		wai_avoid_road				= 100;			// avoid spawning missions this close to roads
+		wai_avoid_water				= 100;			// avoid spawning missions this close to water
 		
 		wai_blacklist_players_range = 750;				// distance to players
 		wai_blacklist_range			= 600;				// Distiance to base, traders, spawnpoint
@@ -120,19 +120,19 @@ if(isServer) then {
 		wai_server_fps				= 10; 				// missions only starts if server FPS is over wai_server_fps
 		
 		// Don't use might be buged 
-		wai_kill_percent			= 0;				// percentage of AI players that must be killed at "crate" missions to be able to trigger completion
+		wai_kill_percent			= 90;				// percentage of AI players that must be killed at "crate" missions to be able to trigger completion
 
 		wai_high_value				= true;				// enable the possibility of finding a high value item (defined below crate_items_high_value) inside a crate
-		wai_high_value_chance		= 10;				// chance in percent you find above mentioned item
+		wai_high_value_chance		= 80;				// chance in percent you find above mentioned item
 
 		wai_enable_minefield		= true;				// enable minefields to better defend missions
 		wai_use_launchers			= true;				// add a rocket launcher to each spawned AI group
-		wai_remove_launcher			= true;				// remove rocket launcher from AI on death
+		wai_remove_launcher			= false;				// remove rocket launcher from AI on death
 
 		// Missions
 		//wai_announce				= "hint";			// Setting this to true will announce the missions to those that hold a radio only "radio", "global", "hint", "text"
 		wai_announce				= "radio";			// Changed to "radio" - 12/4/2015, gcurtis
-		wai_bandit_limit			= 2;				// define how many bandit missions can run at once
+		wai_bandit_limit			= 6;				// define how many bandit missions can run at once
 		
 		//Syntax ["MISSION NAME","CHANGE"] Change must equal 100 when put together 
 		wai_bandit_missions			= [

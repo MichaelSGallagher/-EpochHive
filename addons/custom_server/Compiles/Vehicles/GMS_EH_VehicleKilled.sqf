@@ -11,9 +11,6 @@
 
 	http://creativecommons.org/licenses/by-nc-sa/4.0/
 */
-#include "\q\addons\custom_server\Configs\blck_defines.hpp";
-
-params["_unit","_killer"];
-
-//diag_log format["EH_AIKilled:: _units = %1 and _killer = %2",_unit,_killer];
-[_unit,_killer] remoteExec ["blck_fnc_processAIKill",2];
+//#include "\q\addons\custom_server\Configs\blck_defines.hpp";
+if !(isDedicated) exitWith {};
+_this call blck_fnc_processAIVehicleKill;

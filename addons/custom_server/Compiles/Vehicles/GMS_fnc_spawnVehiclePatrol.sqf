@@ -35,7 +35,8 @@ if (blck_debugLevel > 1) then
 if !(isNull _group) then 
 {  // exitWith {diag_log "[blckeagls] ERROR CONDITION:-->> NULL-GROUP Provided to _fnc_spawnVehiclePatrol"; objNull;};
 	_veh = [_vehType,_pos] call blck_fnc_spawnVehicle;
-	_veh addEventHandler["HandleDamage",{ [_this] call compile preprocessFileLineNumbers blck_EH_AIVehicle_HandleDamage}];
+//	_veh addEventHandler["HandleDamage",{ [_this] call compile preprocessFileLineNumbers blck_EH_AIVehicle_HandleDamage}];
+	_veh addMPEventHandler["MPHit",{ [_this] call compile preprocessFileLineNumbers blck_EH_AIVehicle_HandleHit}];
 	_group setVariable["groupVehicle",_veh];
 	//#ifdef blck_debugMode
 	if (blck_debugLevel > 1) then
@@ -57,7 +58,7 @@ if !(isNull _group) then
 			_unitNumber = _unitNumber + 1;
 	}forEach (units _group);
 
-	// params["_pos","_minDis","_maxDis","_group",["_mode","random"],["_pattern",["MOVE","SAD"]]];
+	// params["_pos","_minDis","_maxDis","_group",["_mode","random"],["_wpPatrolMode","SAD"],["_soldierType","null"] ];
 	_group setcombatmode "RED";
 	_group setBehaviour "COMBAT";
 	[_center,_minDis,_maxDis,_group,"perimeter","SAD","vehicle"] spawn blck_fnc_setupWaypoints;

@@ -17,7 +17,7 @@
 	- Secondary AI skills can be decimal values i.e. 0.23
 	- Lower time intervals for detections require more CPU resources
 */
-SAR_useBlacklist = false; // Only works for Altis Exile, Namalsk Exile and Tanoa Exile currently. Do not use for non Exile servers!
+SAR_useBlacklist = true; // Only works for Altis Exile, Namalsk Exile and Tanoa Exile currently. Do not use for non Exile servers!
 
 /* Debug Settings */
 SAR_DEBUG 			= false; // Set to true for RPT info on AI
@@ -70,7 +70,7 @@ SAR_chance_mili_heli		= 35;
 
 // AI experience system
 SAR_AI_XP_SYSTEM 	= true;		// Turn this feature on or off
-SAR_SHOW_XP_LVL 	= false;
+SAR_SHOW_XP_LVL 	= true;
 
 // Level 1 settings
 SAR_AI_XP_LVL_1 	= 0; 		// xp needed to reach this level

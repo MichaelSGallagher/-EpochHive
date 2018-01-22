@@ -39,12 +39,12 @@ defaultVestMale =			"V_35_EPOCH";
 defaultGoggles =			"G_Tactical_Black";
 defaultHeadgear =			"H_40_EPOCH";
 defaultBackpack =			"B_Carryall_oucamo";
-defaultprimaryWeapon[] =	{"arifle_SPAR_03_blk_MOS_Pointer_Bipod_F","","acc_pointer_IR","",{"20Rnd_762x51_Mag",20},{},""};
+defaultprimaryWeapon[] =	{"CUP_srifle_AS50_AMPAS13c2","","","",{"CUP_5Rnd_127x99_as50_M",20},{},"",1};
 defaultsecondaryWeapon[] = 	{};
-defaulthandgunWeapon[] =	{"hgun_Pistol_heavy_01_snds_F","","","",{"11Rnd_45ACP_Mag",11},{},""};
-defaultuniformItems[] =		{{"FAK",1},{"20Rnd_762x51_Mag",2,30},{"Chemlight_green",1,1}};
-defaultvestItems[] =		{{"20Rnd_762x51_Mag",3,30},{"11Rnd_45ACP_Mag",2,11},{"SmokeShell",1,1}};
-defaultbackpackItems[] =	{{"FAK",1},{{"hgun_Pistol_heavy_01_snds_F","","","",{"11Rnd_45ACP_Mag",11},{},""},1}};
+defaulthandgunWeapon[] =	{"hgun_Pistol_heavy_01_snds_F","","","",{"11Rnd_45ACP_Mag",2,11},{},"",1};
+defaultuniformItems[] =		{{"FAK",1},{"CUP_5Rnd_127x99_as50_M",2,30},{"Chemlight_green",1,1}};
+defaultvestItems[] =		{{"CUP_5Rnd_127x99_as50_M",3,30},{"11Rnd_45ACP_Mag",2,11},{"SmokeShell",3,1}};
+defaultbackpackItems[] =	{{"FAK",2},{{"","","","",{"11Rnd_45ACP_Mag",2,11},{},""},1}};
 defaultassignedItems[] =	{"Rangefinder","","","",{},{},""};
 defaultlinkedItems[] =		{
 	"ItemMap", // "ItemMap"
